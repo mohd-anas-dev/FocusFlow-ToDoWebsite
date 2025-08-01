@@ -11,6 +11,9 @@
   padding: 0px;
   margin: 0px;
 }
+body{
+  background-color: #fef7eb;
+}
 .completed{
     text-decoration: line-through;
     color:#9e340b;
