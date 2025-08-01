@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.Body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6b1f0d, #b3541a); 
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Clock {
+  background-color: #9e340b;
+  width: 280px;
+  padding: 40px 30px;
+  border-radius: 30px;
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.35),  
+    -8px -8px 20px rgba(255, 255, 255, 0.15); 
+  color: #fef7ef;
+  text-align: center;
+  user-select: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.Clock:hover {
+  transform: scale(1.05);
+  box-shadow:
+    12px 12px 30px rgba(0, 0, 0, 0.45),
+    -12px -12px 30px rgba(255, 255, 255, 0.25);
+}
+
+.Clock #time {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 12px;
+  padding: 14px 0;
+  border-radius: 14px;
+  box-shadow:
+    inset 6px 6px 12px rgba(0, 0, 0, 0.3),
+    inset -6px -6px 12px rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.1em;
+  background: linear-gradient(145deg, #b2510e, #8d2b06);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  font-feature-settings: "tnum";
+}
+
+.Clock #day {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: light;
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f8e7d1;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.Clock #date {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: light; 
+  font-size: 1rem;
+  color: #f9f4ec;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
+  .Clock {
+    display: none;
+  }
+
+}

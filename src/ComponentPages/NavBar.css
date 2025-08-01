@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.TodoNav{
+    min-height: 10vh;
+    background-color: #9e340b;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fef7e7;
+    font-family: 'Montserrat', sans-serif;
+
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.9);
+    padding: 0vw 3vw; 
+}
+.ForMobile{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.NavLeft{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    img{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+        transition: all 0.3s ease 0s;
+    }
+    img:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 5px 3px black;
+        transform: scale(1.1);
+    }
+    
+    h1{
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+.NavRight{
+    ul{
+        display: flex;
+        gap: 2.5em;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+            
+            transition: all 300ms ease-in-out 0s;
+            text-decoration: transparent;
+            font-size: 13px;
+        }
+        li:hover{
+            cursor: pointer;
+            color: black;
+        }
+    }
+}
+
+.Underline{
+    position: relative;
+    display: inline-block;
+    color:black;
+    transition: all 300ms ease 0s;
+}
+.Underline:hover{
+    color: #fef7e7;
+}
+
+.Underline::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    transition: width ease 300ms;
+    transform-origin:  left;
+    background-color: white;
+}
+
+.Underline:hover:after{
+    width: 100%;
+}
+
+.Underline.active{
+    color:#fef7e7
+}
+.Underline.active::after{
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* Styles for tablets and all phones */
+}
+
+@media screen and (max-width: 500px) {
+    .NavLeft.mobile-closed{
+        border: solid 2px black;
+    }
+    .TodoNav.mobile-closed{
+        visibility: visible;
+        opacity: 1;
+        right: -100%;
+        
+    }
+    .TodoNav.mobile-open{
+        visibility: visible;
+        opacity: 1;
+        right: 0;
+    }
+    .TodoNav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        z-index: 20;
+        width: min(15em, 100%);
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: start;
+        padding: 15px;
+        transition: right 300ms ease-out;
+
+
+    }
+    .ForMobile{
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        position: fixed;
+        z-index: 25;
+        top: 15px;
+        right: 15px;
+        button{
+            height: 35px;
+            width: 35px;
+            background: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .Hamburger{
+                height: 28px;
+                width: 28px;
+                color: #9e340b;
+            }
+
+            .CrossHamburger{
+                height: 28px;
+                width: 28px;    
+                color: #fef7e7;
+            }
+        }
+    }
+    
+
+    .NavRight{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .NavRight ul{
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5em;
+        align-items: flex-start;
+    }
+
+    .NavRight ul li{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+    .Underline{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+  /* Styles for very small phones */
+}
