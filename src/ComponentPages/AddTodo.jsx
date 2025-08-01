@@ -22,6 +22,13 @@ const AddTodo = () => {
 
     const [ShowFinishedTodos, setShowFinishedTodos] = useState(false)
 
+    const plainText = () => {
+        if(UserToDos.length === 0){
+            return <p className='NoTodosMessage'>Create a To-Do</p>
+        } else  {
+            return UserToDos
+        }
+    }
 
     const handleFinishedTodos = () => {
         if(ShowFinishedTodos){
@@ -188,8 +195,8 @@ const AddTodo = () => {
                 </div>
                     
                 <div className="UserTodos">
-                    {handleFinishedTodos().map((todo)=>(
-                        
+                    {UserToDos.length === 0 ? plainText() :
+                    handleFinishedTodos().map((todo)=>(                      
                         <div key={todo.id} className="YourToDo" >
                             {
                                 editingId === todo.id ? (
