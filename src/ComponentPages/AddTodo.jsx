@@ -1,12 +1,19 @@
 import NavBar from './NavBar'
 import WatchClock from './WatchClock'
 import "./AddTodo.css"
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { HandCoins, User } from 'lucide-react'
 
 const AddTodo = () => {
     const navigate = useNavigate()
+
+    const addFocusController = useRef(null)
+
+    const handleInputController = () =>{
+        addFocusController.current.focus()
+    }
+
     
     const [UserToDos, setUserToDos] = useState([])
     const [UserValues, setUserValues] = useState("")
@@ -180,8 +187,8 @@ const AddTodo = () => {
                     <h2>FocusFlow – Your Personal To-Do Hub</h2>
                         <h4>Add a To-Do</h4>
                     <div className="AddTodo">
-                        <input type="text" value={UserValues} onChange={handleInputChange} placeholder='e.g., Finish math homework' /> 
-                        <button onClick={handleClickEvent}>Add</button>
+                        <input ref={addFocusController} type="text" value={UserValues} onChange={handleInputChange} placeholder='e.g., Finish math homework' /> 
+                        <button onClick={()=>{handleClickEvent(); handleInputController(); }}>Add</button>
                     </div>
                 </div>
 
