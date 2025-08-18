@@ -189,7 +189,7 @@
     margin-bottom: 50px; 
     overflow-y: auto;
     flex: 1;
-    filter: blur(3px);
+    /* filter: blur(3px); */
     transition: all 0.3s ease 0s;
 
 }
