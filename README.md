@@ -2,7 +2,7 @@
 
 **FocusFlow** is a sleek and modern **ToDo web application** designed to help users organize their tasks efficiently, stay focused, and boost productivity. Its clean interface, smooth animations, and intuitive UX make task management simple and enjoyable.
 
-![FocusFlow Screenshot](https://your-image-link.com) *(replace with your app screenshot)*
+![FocusFlow Screenshot](https://mohdanasfolio.netlify.app/ProjectsImage/FocusFlow.png) 
 
 ---
 
