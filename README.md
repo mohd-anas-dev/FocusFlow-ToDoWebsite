@@ -1,12 +1,108 @@
-# React + Vite
+# FocusFlow 📝✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**FocusFlow** is a sleek and modern **ToDo web application** designed to help users organize their tasks efficiently, stay focused, and boost productivity. Its clean interface, smooth animations, and intuitive UX make task management simple and enjoyable.
 
-Currently, two official plugins are available:
+![FocusFlow Screenshot](https://your-image-link.com) *(replace with your app screenshot)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Table of Contents
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* [Features](#features)
+* [Demo](#demo)
+* [Tech Stack](#tech-stack)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Future Improvements](#future-improvements)
+* [Contributing](#contributing)
+* [License](#license)
+
+---
+
+## Features
+
+* ✅ **Add, Edit, and Delete Tasks** – Manage your daily tasks easily
+* 🎯 **Focus Mode** – Minimize distractions and track progress
+* 🗂 **Task Categorization** – Group tasks by priority or project
+* 💾 **Persistent Storage** – Tasks are saved using `localStorage`
+* ⚡ **Smooth Animations** – CSS-based transitions for better UX
+* 🌐 **Responsive Design** – Works seamlessly on desktop and mobile
+
+---
+
+## Demo
+
+Try the live app here: [FocusFlow Live](https://mohdanasfolio.netlify.app/)
+
+---
+
+## Tech Stack
+
+* **Frontend:** HTML5, CSS3, JavaScript, React.js
+* **Styling & Animations:** Tailwind CSS, CSS Animations
+* **State Management:** React Hooks (`useState`, `useEffect`)
+* **Storage:** `localStorage` for persisting tasks
+
+---
+
+## Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/FocusFlow.git
+cd FocusFlow
+npm install
+```
+
+Run the development server:
+
+```bash
+npm start
+```
+
+Your app should now be running at `http://localhost:3000`.
+
+---
+
+## Usage
+
+1. Add tasks by typing in the input box and pressing **Enter** or clicking **Add**.
+2. Edit tasks by clicking the **edit icon**.
+3. Delete tasks individually using the **trash icon** or clear all tasks.
+4. Organize tasks by marking them as **complete** or sorting by priority.
+5. Enjoy a distraction-free interface with **Focus Mode**.
+
+---
+
+## Future Improvements
+
+* 🔄 **Sync across devices** using backend integration
+* 📅 **Calendar View** for scheduling tasks
+* 🏆 **Productivity Stats & Analytics**
+* 🌙 **Dark Mode & Theme Customization**
+
+---
+
+## Contributing
+
+Contributions are welcome!
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## License
+
+This project is **MIT Licensed**. See `LICENSE` for details.
+
+---
+
+## Connect with Me
+
+* Portfolio: [MohdAnasFolio](https://mohdanasfolio.netlify.app)
+* GitHub: [Mohammed Anas](https://github.com/yourusername)
